@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Card Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.2/dist/css/uikit.min.css" />
+
+</head>
+
+<body>
+    <section class="header">
+
+        <nav class="uk-navbar navbar" uk-navbar>
+            <div class="uk-flex menu">
+                <a class="uk-text uk-margin-right nav-link" href="#">Home</a>
+                <a class="uk-text uk-margin-right nav-link" href="#">About</a>
+                <a class="uk-text nav-link" href="#">Store</a>
+            </div>
+
+            <div class="logo-block">
+                <a class="logo_link" href=""><img class="company-logo"
+                        src="https://www.haverhill-ps.org/wp-content/uploads/sites/20/2015/08/white-apple-circle-logo.png"
+                        alt="" srcset=""></a>
+            </div>
+
+            <div class="uk-flex shop-basket">
+            
+                    <button class="show-basked_block" type="button">
+                        <span uk-icon="icon: cart"></span>
+                        <span class="item-light">0</span>
+
+                        Items -
+                        <span class="total-shop">0</span>
+                    </button>
+                    <div uk-dropdown="mode: click" style="position: absolute; right: 0px;width: 25%; background-color: #2a2c2e; color: #fff;">
+                        <div class="item-flex">
+
+                            <!-- <div class="card-item_basket">
+                                <div class="product-images_basket">
+                                    <img class="images-basket_card" src="https://cdn.pixabay.com/photo/2014/05/02/21/50/home-office-336378_960_720.jpg" alt="" srcset="">
+                                </div>
+                                <div class="product-title_basket">
+                                    <span class="card-title_basket">Laptop</span>
+                                    <span class="card-cost_basket"><span>$</span>1.333</span>
+                                </div>
+                                <div class="input-block">
+                                    <input type="number" id="product-length" value="1">
+                                </div>
+                                <div class="deleted-btn_basket">
+                                    <span uk-icon="icon: trash; ratio: 1.2"></span>
+                                </div>
+                            </div> -->
+
+
+                        </div>
+
+                        <div class="basket-btn_block uk-margin-top">
+                            <div class="total-title">
+                                <span class="total-cost">Total</span>
+                                <span class="total-number"><span>$</span>0</span>
+                            </div>
+                            <div class="total-btn uk-margin-small-top">
+                                <button class="basket-clear_btn">Clear card</button>
+                                <button class="basket-checkout_btn">CHeckout</button>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+
+        </nav>
+
+        <div class="content">
+            <div class="company-name">
+                <span class="title">Welcome To <span class="brand">Apple Shop</span></span>
+                <button class="btn-explore uk-margin-top">EXPLORE</button>
+            </div>
+        </div>
+
+    </section>
+    <section class="content-block">
+        <div class="uk-container">
+            <div class="about-us uk-margin-top">
+                <div class="about-text uk-margin-right">
+                    <span class="ferst-title ">About <span class="secont-title">Us</span></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eos, aspernatur veniam, a explicabo
+                        corrupti iste quidem at soluta quam accusamus maiores distinctio ex fuga consequuntur voluptate
+                        rem quis pariatur?</p>
+                    <button class="btn-about_us uk-margin-top">EXPLORE</button>
+                </div>
+                <div class="about-img uk-margin-left">
+                    <div class="images-block uk-box-shadow-medium">
+                        <div class="images-mackbook"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="card-block">
+        <div class="uk-container">
+            <div class="card-title_block uk-margin-top uk-margin-bottom">
+                <div class="card-title uk-margin-top">
+                    <span class="card-title_ferst">Our
+                        <span>Store</span>
+                    </span>
+                </div>
+                <div class="card-button_block uk-margin-small-bottom">
+                    <button class="card-menu_btn activeMenuBtn">All</button>
+                    <button class="card-menu_btn">Desktop</button>
+                    <button class="card-menu_btn">Laptop</button>
+                    <button class="card-menu_btn">Ipad</button>
+                    <button class="card-menu_btn">Iphone</button>
+                </div>
+                <div class="card-search_block">
+                    <form class="uk-search uk-search-default  search-form" style="width: 44%; border-radius: 5px;">
+                        <span uk-search-icon></span>
+                        <input id="searchInp" class="uk-search-input  search-inp" style="border-radius: 5px" type="search"
+                            placeholder="Search...">
+                    </form>
+                </div>
+            </div>
+
+            <div class="uk-container uk-margin-bottom">
+                <div class="card-block_grid uk-margin-top uk-margin-bottom" id="content-product">
+
+                    <!--
+                    <div class="card-item">
+                        <div class="card-images">
+                            <img class="images-card"
+                                src="https://cdn.pixabay.com/photo/2017/07/11/11/54/imac-2493287_960_720.png"
+                                alt="">
+                            <div class="shop-icon">
+                                <span class="uk-icon uk-icon-image"
+                                    style="background-image: url('https://pngimg.com/uploads/shopping_cart/shopping_cart_PNG64.png');"></span>
+                            </div>
+                            </img>
+                        </div>
+                        <div class="card-text">
+                            <span class="product-name">Apple Imac</span>
+                            <span class="product-cost"><span>$</span>2.299</span>
+                        </div>
+                    </div>
+
+                     <div class="card-item">
+                        <div class="card-images">
+                            <img class="images-card"
+                                src="https://cdn.pixabay.com/photo/2014/05/02/21/50/home-office-336378_960_720.jpg"
+                                alt="">
+                            <div class="shop-icon">
+                                <span class="uk-icon uk-icon-image"
+                                    style="background-image: url('https://pngimg.com/uploads/shopping_cart/shopping_cart_PNG64.png');"></span>
+                            </div>
+                            </img>
+                        </div>
+                        <div class="card-text">
+                            <span class="product-name">MackBook</span>
+                            <span class="product-cost"><span>$</span>1.449</span>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="card-images">
+                            <img class="images-card"
+                                src="https://cdn.pixabay.com/photo/2015/01/15/18/17/ipad-600642_960_720.jpg"
+                                alt="">
+                            <div class="shop-icon">
+                                <span class="uk-icon uk-icon-image"
+                                    style="background-image: url('https://pngimg.com/uploads/shopping_cart/shopping_cart_PNG64.png');"></span>
+                            </div>
+                            </img>
+                        </div>
+                        <div class="card-text">
+                            <span class="product-name">Ipad</span>
+                            <span class="product-cost"><span>$</span>559</span>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="card-images">
+                            <img class="images-card"
+                                src="https://cdn.pixabay.com/photo/2014/09/23/21/23/iphone-6-458159_960_720.jpg"
+                                alt="">
+                            <div class="shop-icon">
+                                <span class="uk-icon uk-icon-image"
+                                    style="background-image: url('https://pngimg.com/uploads/shopping_cart/shopping_cart_PNG64.png');"></span>
+                            </div>
+                            </img>
+                        </div>
+                        <div class="card-text">
+                            <span class="product-name">Iphone 6</span>
+                            <span class="product-cost"><span>$</span>399</span>
+                        </div>
+                    </div>
+                     -->
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer-block">
+        <div class="uk-container">
+            <footer class="footer uk-padding uk-margin-top">
+                <div class="menu-block block-footer">
+                    <div class="footer_title uk-margin-bottom">
+                        <span>Menu-</span>
+                    </div>
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Store</a>
+                </div>
+                <div class="contack-block block-footer">
+                    <div class="footer_title uk-margin-bottom">
+                        <span>Contact-</span>
+                    </div>
+                    <a href="">Twitter: #apple</a>
+                    <a href="">Facebook: #pple</a>
+                    <a href="">Instagram: @apple</a>
+                    <a href="">phone: +123456789</a>
+                    <a href="">Gmail: @apple.com</a>
+                </div>
+                <div class="mail-block block-footer">
+                    <div class="menu-block">
+                        <div class="footer_title uk-margin-bottom">
+                            <span>Support-</span>
+                        </div>
+                        <input class="uk-input" type="text" placeholder="name">
+                        <input class="uk-input" type="text" placeholder="gmail">
+                        <textarea class="uk-textarea" name="" rows="5"></textarea>
+                    </div>
+                </div>
+            </footer>
+        </div>
+                <div class="coprith">
+                    <span>copyright @ websites</span>
+                </div>
+    </section>
+
+
+
+    <script src="javascript/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.2/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>
